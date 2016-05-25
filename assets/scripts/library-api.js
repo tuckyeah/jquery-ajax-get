@@ -1,3 +1,13 @@
 'use strict';
 
-module.exports = true;
+const getBooks = function () {
+  // don't forget the return!!
+  return $.ajax({
+    url: 'http://localhost:3000/books',
+    method: 'GET',
+  });
+};
+
+module.exports = {
+  getBooks,
+};
