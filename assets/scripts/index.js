@@ -10,5 +10,5 @@ const bookEvents = require('./books/events');
 
 // On document ready
 $(() => {
-
+  $('#book-request').on('submit', bookEvents.onGetBooks);
 });
